@@ -298,7 +298,14 @@ console.log('User input ingredient matching array INCLUDES filtered for problemS
 //8a. Create a function that will return an array of the string cuisine types. Ie, ["Italian", "Italian", "Mexican", ...]
 //Map
 
+function problemEighta(){
 
+  let results = dishes.map((el) => el.cuisine);
+    return results
+  };
+ 
+let cuisinemap = problemEighta();
+console.log('Array of cuisine types mapped for problemEighta', cuisinemap)
 
 //9. Create a function that will return an array of strings, with the cuisine type appended to the start of the dish's name. Ie, ["Italian Pizza", "Italian Spaghetti", ...]
 //Map 
