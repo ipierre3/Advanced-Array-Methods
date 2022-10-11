@@ -161,6 +161,25 @@ console.log('typeVegetarian filtered for problemOne', typeVegetarian)
 //2. Create a function that will prompt the user to enter a cuisine type and then return all dishes that match that type
 //Filter
 
+function problemTwo(){
+
+  let results;
+  var userCuisine = prompt("Enter a cuisine type: ");
+  results = dishes.filter(function(el){ 
+    console.log("For each el matching userInput cuisineType: ", el)
+      if (el.cuisine === userCuisine){
+        return true;
+      }
+      else{
+        return false;
+    }
+  })
+
+  return results;
+}
+
+let cuisineType = problemTwo();
+console.log('User cuisineType filtered for problemTwo', cuisineType)
 
 
 //3. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
