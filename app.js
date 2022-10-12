@@ -346,9 +346,48 @@ console.log("Array of cuisine appended to name mapped for problemTen", veggie_ap
 
 //8b. Use the filter method to eliminate duplicate from problem 8a.
 
+function problemEightb() {
+
+  let results;
+  results = dishes.map(function(el) {
+      return el.cuisine;
+  })
+  results = results.filter(function(el, index) {
+      if (index === results.indexOf(el)) {
+          return true;
+      }
+      else {
+          return false;
+      }
+  })
+
+  return results;
+}
+
+let eliminateDuplicates = problemEightb();
+console.log("Eliminating duplicates from problemEighta for problemEightb", eliminateDuplicates);
+
 //11. Create a function that will return dishes whose ingredients array INCLUDES "tomato" OR "cheese".
 //Hint: You do not want to check the array's indexes to find out what the array INCLUDES.
 //Filter
+
+function problemEleven() {
+
+  let results;
+  results = dishes.filter(function(el) {
+      if (el.ingredients.includes("tomato") || el.ingredients.includes("cheese")) {
+          return true;
+      }
+      else {
+          return false;
+      }
+  })
+
+  return results;
+}
+
+let eitherOR = problemEleven();
+console.log('Dish ingredients that INCLUDES "tomato" OR "cheese" for problemEleven', eitherOR);
 
 //12. Create a function that will return the total serving count of all dishes.
 //Must use Reduce, not a loop.
