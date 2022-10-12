@@ -317,7 +317,7 @@ function problemNine(){
   };
  
 let cusine_appendname = problemNine();
-console.log('Array of cuisine types mapped for problemEighta', cusine_appendname)
+console.log('Array of cuisine appended to name mapped for problemNine', cusine_appendname)
 
 //10. Create a function that will use advanced array methods on the 'dishes' array and return the result ["Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"]
 
