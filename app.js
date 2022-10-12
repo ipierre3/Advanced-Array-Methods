@@ -321,8 +321,25 @@ console.log('Array of cuisine appended to name mapped for problemNine', cusine_a
 
 //10. Create a function that will use advanced array methods on the 'dishes' array and return the result ["Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"]
 
+function problemTen() {
+  let results;
+  results = dishes.filter(function(el) {
+      if (el.cuisine === "Vegetarian") {
+          return true;
+      }
+      else {
+          return false;
+      }
+  })
+  results = results.map(function(el) {
+      return el.cuisine + ' ' + el.name;
+  })
 
+  return results;
+}
 
+let veggie_appendCuisine = problemTen();
+console.log("Array of cuisine appended to name mapped for problemTen", veggie_appendCuisine);
 
 
 //BONUS
